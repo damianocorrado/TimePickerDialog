@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.View;
 
 import com.jzxiang.pickerview.adapters.NumericWheelAdapter;
+import com.jzxiang.pickerview.adapters.MonthWheelAdapter;
 import com.jzxiang.pickerview.config.PickerConfig;
 import com.jzxiang.pickerview.data.source.TimeRepository;
 import com.jzxiang.pickerview.utils.PickerContants;
