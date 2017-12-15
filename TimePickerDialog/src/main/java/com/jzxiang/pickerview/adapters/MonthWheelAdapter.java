@@ -24,7 +24,7 @@ import java.util.GregorianCalendar;
 import java.text.SimpleDateFormat;
 
 /**
- * Numeric Wheel adapter.
+ * Month Wheel adapter.
  */
 public class MonthWheelAdapter extends AbstractWheelTextAdapter {
 
@@ -53,7 +53,7 @@ public class MonthWheelAdapter extends AbstractWheelTextAdapter {
      *
      * @param context the current context
      */
-    public NumericWheelAdapter(Context context) {
+    public MonthWheelAdapter(Context context) {
         this(context, DEFAULT_MIN_VALUE, DEFAULT_MAX_VALUE);
     }
 
@@ -76,7 +76,7 @@ public class MonthWheelAdapter extends AbstractWheelTextAdapter {
      * @param maxValue the wheel max value
      * @param format   the format string
      */
-    public NumericWheelAdapter(Context context, int minValue, int maxValue, String format) {
+    public MonthWheelAdapter(Context context, int minValue, int maxValue, String format) {
         this(context, minValue, maxValue, format, null);
     }
 
