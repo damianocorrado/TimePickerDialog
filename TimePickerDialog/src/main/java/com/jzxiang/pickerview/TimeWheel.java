@@ -20,7 +20,8 @@ public class TimeWheel {
     Context mContext;
 
     WheelView year, month, day, hour, minute;
-    NumericWheelAdapter mYearAdapter, mMonthAdapter, mDayAdapter, mHourAdapter, mMinuteAdapter;
+    NumericWheelAdapter mYearAdapter, mDayAdapter, mHourAdapter, mMinuteAdapter;
+    MonthWheelAdapter mMonthAdapter;
 
     PickerConfig mPickerConfig;
     TimeRepository mRepository;
@@ -166,7 +167,7 @@ public class TimeWheel {
         int curYear = getCurrentYear();
         int minMonth = mRepository.getMinMonth(curYear);
         int maxMonth = mRepository.getMaxMonth(curYear);
-        mMonthAdapter = new NumericWheelAdapter(mContext, minMonth, maxMonth, PickerContants.FORMAT, mPickerConfig.mMonth);
+        mMonthAdapter = new MonthWheelAdapter(mContext, minMonth, maxMonth, PickerContants.FORMAT, mPickerConfig.mMonth);
         mMonthAdapter.setConfig(mPickerConfig);
         month.setViewAdapter(mMonthAdapter);
 
